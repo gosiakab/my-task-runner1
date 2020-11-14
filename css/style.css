@@ -1,0 +1,12 @@
+/* Global */
+*, *::before, *::after { box-sizing: border-box; }
+
+h1 { color: green; }
+
+h2 { border: 10px yellowgreen; padding: 20px; }
+
+.poem-title { font-size: 30px; margin-left: 10px; }
+
+.poem-author { font-size: 20px; color: navy; margin-left: 30px; }
+
+body { margin: 0; text-align: center; background: #fff; color: #3d3d3d; font-size: 16px; line-height: 1.7; }
