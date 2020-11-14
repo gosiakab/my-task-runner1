@@ -1,19 +1,80 @@
 /* Global */
-$font-family-base: sans-serif;
-$line-height-base: 1;
-h1 {
-  color: green;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
-h2 {
-  border: 10px yellowgreen;
-  padding: 20px;
+$font-text: 'Xanh Mono', monospace;
+body {
+  font-family: $font-text;
+  margin: 0;
+  text-align: center;
+  background: #fff;
+  color: #fbc531;
+  font-size: 16px;
+  line-height: 1.7;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+section {
+  padding-top: 108px;
+  padding-bottom: 108px;
+}
+
+/* Splash */
+.splash{
+  height: 100vh;
+  position: relative;
+  background-image: url("https://images.pexels.com/photos/2050986/pexels-photo-2050986.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500")
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.splash-inner{
+  position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 .poem-title {
   font-size: 30px;
   margin-left: 10px;
+  color: yellowgreen
 }
 .poem-author {
   font-size: 20px;
   color: navy;
   margin-left: 30px;
 }
+.poem-title::after {
+  position: absolute;
+  content: '';
+  bottom: -24px;
+  left: 50%;
+  width: 100px;
+  height: 10px;
+  transform: translateX(-50%);
+  background: #1e272e; }
+
+  /* Poem */
+  .poem{
+    background: #fff;
+  }
+.poem p{
+  width: 70%;
+  margin: 0 auto;
+  padding: 48px 0;
+  font-size: 24px;
+  border-top: 1px solid #1e272e;
+  border-bottom: 1px solid #1e272e;
+}
+
+
+
+
+
