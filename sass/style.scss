@@ -4,16 +4,16 @@
 *::after {
   box-sizing: border-box;
 }
-$font-text: 'Xanh Mono', monospace;
+$font-text: "Xanh Mono", monospace;
+$font-header: "Amatic SC", cursive;
 body {
-  font-family: $font-text;
   margin: 0;
   text-align: center;
   background: #fff;
   color: #fbc531;
   font-size: 16px;
   line-height: 1.7;
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: $font-text;
 }
 .container {
   max-width: 1140px;
@@ -42,11 +42,13 @@ section {
     transform: translate(-50%,-50%);
 }
 .poem-title {
+  font-family: $font-header;
   font-size: 30px;
   margin-left: 10px;
   color: yellowgreen
 }
 .poem-author {
+  font-family: $font-header;
   font-size: 20px;
   color: navy;
   margin-left: 30px;
