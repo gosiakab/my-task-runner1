@@ -6,6 +6,7 @@
 }
 $font-text: "Xanh Mono", monospace;
 $font-header: "Amatic SC", cursive;
+
 body {
   margin: 0;
   text-align: center;
@@ -26,26 +27,26 @@ section {
 }
 
 /* Splash */
-.splash{
+.splash {
   height: 100vh;
   position: relative;
-  background-image: url("https://images.pexels.com/photos/2050986/pexels-photo-2050986.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500")
+  background-color: lightblue;
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
 }
-.splash-inner{
+.splash-inner {
   position: absolute;
-    width: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .poem-title {
   font-family: $font-header;
   font-size: 30px;
   margin-left: 10px;
-  color: yellowgreen
+  color: yellowgreen;
 }
 .poem-author {
   font-family: $font-header;
@@ -55,19 +56,20 @@ section {
 }
 .poem-title::after {
   position: absolute;
-  content: '';
+  content: "";
   bottom: -24px;
   left: 50%;
   width: 100px;
   height: 10px;
   transform: translateX(-50%);
-  background: #1e272e; }
+  background: #1e272e;
+}
 
-  /* Poem */
-  .poem{
-    background: #fff;
-  }
-.poem p{
+/* Poem */
+.poem {
+  background: #fff;
+}
+.poem p {
   width: 70%;
   margin: 0 auto;
   padding: 48px 0;
@@ -75,8 +77,3 @@ section {
   border-top: 1px solid #1e272e;
   border-bottom: 1px solid #1e272e;
 }
-
-
-
-
-
