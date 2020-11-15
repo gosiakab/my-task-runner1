@@ -2,78 +2,42 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  box-sizing: content-box;
 }
 $font-text: "Xanh Mono", monospace;
 $font-header: "Amatic SC", cursive;
 
-body {
-  margin: 0;
-  text-align: center;
-  background: #fff;
-  color: #fbc531;
-  font-size: 16px;
-  line-height: 1.7;
-  font-family: $font-text;
-}
-.container {
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-section {
-  padding-top: 108px;
-  padding-bottom: 108px;
-}
-
-/* Splash */
-.splash {
-  height: 100vh;
+/* Main content */
+.content-left,
+.content-right {
   position: relative;
-  background-color: lightblue;
-  background-position: center center;
-  background-size: cover;
-  background-attachment: fixed;
 }
-.splash-inner {
+.content-image {
   position: absolute;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+.content-image img {
   width: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  height: 100%;
+  object-fit: cover;
 }
-.poem-title {
-  font-family: $font-header;
-  font-size: 30px;
-  margin-left: 10px;
-  color: yellowgreen;
+.content-right .content-image {
+  right: 0;
 }
-.poem-author {
-  font-family: $font-header;
-  font-size: 20px;
-  color: navy;
-  margin-left: 30px;
+.content-right .content-description {
+  padding: 36px 55% 36px 0;
+  text-align: right;
 }
-.poem-title::after {
-  position: absolute;
-  content: "";
-  bottom: -24px;
-  left: 50%;
-  width: 100px;
-  height: 10px;
-  transform: translateX(-50%);
-  background: #1e272e;
+.content-left .content-description {
+  padding: 36px 0 36px 55%;
+  text-align: left;
+}
+.content-image img:hover {
+  transform: scale(1.2, 1.2);
 }
 
-/* Poem */
-.poem {
-  background: #fff;
-}
-.poem p {
-  width: 70%;
-  margin: 0 auto;
-  padding: 48px 0;
-  font-size: 24px;
-  border-top: 1px solid #1e272e;
-  border-bottom: 1px solid #1e272e;
+.content-image img {
+  transition: all 1s;
 }
