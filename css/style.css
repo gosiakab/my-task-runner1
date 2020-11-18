@@ -1,12 +1,91 @@
 /* Global */
-*, *::before, *::after { box-sizing: border-box; }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
-h1 { color: green; }
+/* Main-content */
+.content-piece {
+  position: relative;
+}
 
-h2 { border: 10px yellowgreen; padding: 20px; }
+.content-image {
+  position: absolute;
+  width: 20px;
+  height: 30px;
+  overflow: hidden;
+}
 
-.poem-title { font-size: 30px; margin-left: 10px; }
+.content-image img {
+  width: 25%;
+  height: 50%;
+  object-fit: cover;
+}
 
-.poem-author { font-size: 20px; color: navy; margin-left: 30px; }
+.content-title {
+  position: relative;
+  font-size: 36px;
+  margin: 48px 0 0 0;
+  font-family: "Amatic SC", cursive;
+}
 
-body { margin: 0; text-align: center; background: #fff; color: #3d3d3d; font-size: 16px; line-height: 1.7; }
+.content-title::after {
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  width: 50px;
+  height: 10px;
+  transform: translateX(-50%);
+  background: #1e272e;
+}
+
+.content-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+/* Splash */
+.splash {
+  height: 100vh;
+  position: relative;
+  background-image: url("https://images.pexels.com/photos/383568/pexels-photo-383568.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.splash-inner {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.page-title {
+  color: #2d3436;
+  font-size: 50px;
+  margin: 0 0 25px 0;
+  position: relative;
+  font-family: "Amatic SC", cursive;
+}
+
+.page-title::after {
+  position: absolute;
+  bottom: -24px;
+  left: 50%;
+  width: 100px;
+  height: 10px;
+  transform: translateX(-50%);
+  background: #1e272e;
+}
+
+.page-subtitle {
+  color: #2c3e50;
+  font-size: 20px;
+  margin: 20px 0 0 0;
+  font-family: "Amatic SC", cursive;
+}
+/*# sourceMappingURL=style.css.map */
