@@ -5,9 +5,31 @@
   box-sizing: border-box;
 }
 
+/* Intro */
+.intro-title {
+  position: relative;
+  font-size: 50px;
+  font-weight: bold;
+  margin-left: 500px;
+  font-family: "Amatic SC", cursive;
+}
+
+.container {
+  font-size: 30px;
+  font-weight: bold;
+
+  font-family: "Amatic SC", cursive;
+}
 /* Main-content */
 .content-piece {
+  position: static;
+}
+.main-content-title {
   position: relative;
+  font-size: 50px;
+  font-weight: bold;
+  margin-left: 500px;
+  font-family: "Amatic SC", cursive;
 }
 .content-image {
   position: absolute;
@@ -16,13 +38,13 @@
   overflow: hidden;
 }
 .content-image img {
-  width: 25%;
+  width: 75%;
   height: 50%;
   object-fit: cover;
 }
 .content-title {
   position: relative;
-  font-size: 50px;
+  font-size: 20px;
   margin: 48px 0 0 0;
   font-family: "Amatic SC", cursive;
 }
@@ -62,7 +84,10 @@
 .page-title {
   color: #2d3436;
   font-size: 50px;
-  margin: 0 0 25px 0;
+  margin-left: 600px;
+  margin-right: 200px;
+  padding: 20px;
+  border: 20px black;
   position: relative;
   font-family: "Amatic SC", cursive;
 }
@@ -79,7 +104,30 @@
 
 .page-subtitle {
   color: #2c3e50;
-  font-size: 20px;
-  margin: 20px 0 0 0;
+  font-size: 40px;
+  margin-left: 650px;
+  margin-right: 200px;
   font-family: "Amatic SC", cursive;
+}
+.btn {
+  display: inline-block;
+  min-width: 160px;
+  margin-left: 625px;
+  padding: 16px;
+  border-radius: 5px;
+  font-family: "Amatic SC", cursive;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-width: 2px;
+  border-style: solid;
+  background-position: 100% 0;
+  background-size: 300%;
+  transition: all 1s;
+}
+.btn:hover {
+  background-position: 0 100%;
+  color: black;
 }
